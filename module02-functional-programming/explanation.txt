@@ -1,0 +1,30 @@
+Functional Programming
+1. Primitive Types => Value Type
+x : float = 42
+name = "Jack"
+is_odd = False
+2. Object
+shape1 = Circle(100)
+account = Account("TR1", 100_000, AccountStatus.ACTIVE)
+3. Function
+is_even = lambda expression
+def fun(test_fun):
+    return lambda expression
+
+functions in Functional Programming
+ I. HoF (Higher-Order Function)
+    fun() function above
+II. Pure Function
+    Global/Local State
+    functions() == mutates ==> Global State
+    stateless, input parameters -> compute -> result
+
+                      pure function
+chain of functions => HoF => (immutable,lazy) pipeline
+1. descriptive programming -> higher abstract -> one-liner
+2. HoF: filter/map/reduce framework: turing-complete
+3. immutability -> inefficient memory -> lazy evaluation, generator functions
+
+
+
+
