@@ -97,4 +97,4 @@ for a_animal in zoo_animals:
         a_animal.play() # safe
 
 # error: my_pet = Pet()
-my_animal = Animal(100)
+# error: my_animal = Animal(100)
