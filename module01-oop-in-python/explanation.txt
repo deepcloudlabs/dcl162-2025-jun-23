@@ -1,0 +1,21 @@
+Programming Paradigm
+ I. Imperative Programming
+   Procedural Programming: C, Go, Python, JS, ...
+   OOP: C++, C#, Java, JS, Python
+   Loop
+
+II. Declarative Programming
+    OOP: C++ STL, C++20 Ranges
+    Functional Programming: C++, JS, Python, C# LINQ, Java Stream API
+    Method Chain -> HoF (Higher-Order Function)
+    Pipeline -> MapReduce Framework (Hadoop: HDFS + MapReduce)
+
+Object-Oriented Programming
+  I. Class -> Object
+     Modeling: i. attributes: field -> data
+            ii. behaviors: method
+     Encapsulation -> Source of error
+     Principle: Information Hiding
+
+ II. Inheritance -> Reusability
+III. Polymorphism -> Agility
