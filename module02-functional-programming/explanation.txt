@@ -25,6 +25,26 @@ chain of functions => HoF => (immutable,lazy) pipeline
 2. HoF: filter/map/reduce framework: turing-complete
 3. immutability -> inefficient memory -> lazy evaluation, generator functions
 
+before:
+[{'name': 'Comedy', '_id': 1}, {'name': 'Drama', '_id': 2}, {'name': 'Romance', '_id': 3}]
+[{'name': 'Drama', '_id': 2}, {'name': 'Mystery', '_id': 4}]
+[{'name': 'Action', '_id': 5}, {'name': 'Sci-Fi', '_id': 6}, {'name': 'Thriller', '_id': 7}]
+[{'name': 'Drama', '_id': 2}, {'name': 'Romance', '_id': 3}]
+[{'name': 'Drama', '_id': 2}]
+[{'name': 'Drama', '_id': 2}, {'name': 'War', '_id': 8}]
+.
+.
+.
 
-
-
+after:
+{'name': 'Comedy', '_id': 1}
+{'name': 'Drama', '_id': 2}
+{'name': 'Romance', '_id': 3}
+{'name': 'Drama', '_id': 2}
+{'name': 'Mystery', '_id': 4}
+{'name': 'Action', '_id': 5}
+{'name': 'Sci-Fi', '_id': 6}
+{'name': 'Thriller', '_id': 7}
+.
+.
+.
