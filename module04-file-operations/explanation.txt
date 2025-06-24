@@ -1,0 +1,14 @@
+File, File System: Abstraction
+File: 1D Array
+1. Text I/O    : C C C C C
+   CSV, XML, JSON, ...: HRF
+   HTTP -> Textual Protocol -> JSON
+   x = 3542      3 5 4 2
+   numbers = [4,8,15,16,23,42]
+             4 , 8 , 1 5 , 1 6 , 2 3 , 4 2
+2. Binary I/O  : B B B B B
+   x = 42
+       3615      B B B B
+       1_000_000
+   numbers = [4,8,15,16,23,42]
+                 4B 4B 4B 4B 4B 4B
