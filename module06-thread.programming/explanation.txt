@@ -1,0 +1,17 @@
+I. Multitasking -> 1CPU -> Concurrency
+1. MultiProcess
+   Critical Task
+   Process Programming -> Heavy-weight
+   Process -> Heap, Stack, Text, Data
+
+2. Thread
+   Thread Programming -> Light-weight
+   Better Resource (CPU/Memory) Utilization -> Better Throughput
+   Thread ->        Stack
+
+II. Parallel Programming -> Multicore -> GPU
+
+Application Architecture:
+Multi Process -> chrome
+Single Process Multi Thread -> mysql, mongodb
+Multi Process Multi Thread -> oracle -> distributed programming
