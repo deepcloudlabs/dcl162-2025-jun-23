@@ -24,7 +24,7 @@ socketio = SocketIO(hr_rest_api, cors_allowed_origins="*")
 # region rest-api layer
 updatable_fields = ["fullname", "iban", "salary", "department", "fulltime", "photo"]
 
-
+#region Query
 @hr_rest_api.route("/hr/api/v1/employees/<identity>", methods=['GET'])
 def get_employees_by_identity(identity: str):
     return jsonify(employees_collection.find_one({"identity": identity}))
@@ -33,8 +33,9 @@ def get_employees_by_identity(identity: str):
 @hr_rest_api.route("/hr/api/v1/employees", methods=['GET'])
 def get_employees():
     return json.dumps([emp for emp in employees_collection.find({})])
+#endregion
 
-
+#region Command
 @hr_rest_api.route("/hr/api/v1/employees", methods=['POST'])
 def hire_employee():
     global socketio
@@ -63,7 +64,7 @@ def fire_employee(identity: str):
     employees_collection.delete_one({"identity": identity})
     socketio.emit("fire", employee)
     return jsonify(employee)
-
+#endregion
 
 # endregion
 
