@@ -9,7 +9,7 @@ def fun(n):
 
 print(data)
 threads = []
-for i in range(20000):
+for i in range(200):
     threads.append(Thread(target=fun, args=(10_000_000,)))
 for thread in threads:
     thread.start()

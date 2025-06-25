@@ -15,3 +15,12 @@ Application Architecture:
 Multi Process -> chrome
 Single Process Multi Thread -> mysql, mongodb
 Multi Process Multi Thread -> oracle -> distributed programming
+
+Managed Platform -> Cyton, Jyton
+Python Interpreter -> Thread
+GIL: Global Interpreter Lock -> Mutual Exclusion Lock (mutex)
+
+Task: i. cpu-bound -> data science, ml/deep learning, LLM, ...
+                      pandas, scikit, tensorflow, ... -> C, Python Interpreter
+                      cpu -> gpu-bound
+     ii. i/o-bound (disk, network i/o)
