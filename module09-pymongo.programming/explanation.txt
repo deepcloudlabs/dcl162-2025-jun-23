@@ -1,0 +1,8 @@
+Document Database
+Document: JSON -> Hierarchical, Textual
+Document Size: 16MB -> Normalization -> Lookup Collection
+Multimedia Data -> Binary Data -> Base64 Encoding
+Domain: Healthcare -> CXR, CT, MR, ...
+GridFS -> Binary/Big Data -> Clustered
+        Metadata -> MongoDB Collection
+
